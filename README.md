@@ -15,5 +15,7 @@ stored procedures and functions from Sakila. Integration tests are provided to d
 they are working properly.
 
 Ken Kousen
+
 [ken.kousen@kousenit.com](mailto:ken.kousen@kousenit.com)
+
 [http://www.kousenit.com](http://www.kousenit.com)
