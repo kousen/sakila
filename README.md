@@ -14,8 +14,6 @@ The `StoredProcService` and `FunctionService` classes contain methods to invoke 
 stored procedures and functions from Sakila. Integration tests are provided to demonstrate
 they are working properly.
 
-Ken Kousen
-
-[ken.kousen@kousenit.com](mailto:ken.kousen@kousenit.com)
-
-[http://www.kousenit.com](http://www.kousenit.com)
+Ken Kousen  
+[ken.kousen@kousenit.com](mailto:ken.kousen@kousenit.com)  
+[http://www.kousenit.com](http://www.kousenit.com)  
