@@ -8,4 +8,6 @@ enum Rating {
     Rating(String id) {
         this.id = id
     }
+
+    String toString() { id }
 }
