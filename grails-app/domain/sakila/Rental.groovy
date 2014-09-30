@@ -1,5 +1,8 @@
 package sakila
 
+import groovy.transform.ToString
+
+@ToString(includes = ['rentalDate', 'returnDate'])
 class Rental {
     Integer id
     Date rentalDate

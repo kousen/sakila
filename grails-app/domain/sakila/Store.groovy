@@ -6,6 +6,8 @@ class Store {
     Address address
     Staff manager
 
+    String toString() { "Store at $address managed by $manager" }
+
     static hasMany = [customers: Customer,
                       inventories: Inventory]
 

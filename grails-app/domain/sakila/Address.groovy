@@ -1,8 +1,5 @@
 package sakila
 
-import groovy.transform.ToString
-
-@ToString(includeNames = true)
 class Address {
     Short id
     String street1
@@ -12,6 +9,8 @@ class Address {
     String phone
     Date lastUpdated
     City city
+
+    String toString() { "$street1, $city, $district" }
 
     static mapping = {
         id column: 'address_id'

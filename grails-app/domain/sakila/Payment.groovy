@@ -13,7 +13,7 @@ class Payment {
     Rental rental
 
     String toString() {
-        String amtString = NumberFormat.currencyInstance.format(amount)
+        String amtString = NumberFormat.currencyInstance.format(amount ?: 0.0)
         "$amtString on $paymentDate"
     }
 

@@ -14,6 +14,8 @@ class Staff {
     Address address
     Store store
 
+    String toString() { "$firstName $lastName" }
+
     static hasMany = [rentals: Rental, payments: Payment]
 
     static mapping = {
