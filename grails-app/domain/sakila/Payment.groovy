@@ -8,7 +8,6 @@ class Payment {
     Date paymentDate
     Date lastUpdated
 
-    Customer customer
     Staff staff
     Rental rental
 
@@ -16,6 +15,8 @@ class Payment {
         String amtString = NumberFormat.currencyInstance.format(amount ?: 0.0)
         "$amtString on $paymentDate"
     }
+
+    static belongsTo = [customer: Customer]
 
     static mapping = {
         id column: 'payment_id'

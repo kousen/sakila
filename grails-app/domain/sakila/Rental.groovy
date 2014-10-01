@@ -2,7 +2,7 @@ package sakila
 
 import groovy.transform.ToString
 
-@ToString(includes = ['rentalDate', 'returnDate'])
+@ToString(includes = ['rentalDate', 'returnDate'], includeNames = true)
 class Rental {
     Integer id
     Date rentalDate
@@ -10,10 +10,10 @@ class Rental {
     Date lastUpdated
 
     Inventory inventory
-    Customer customer
     Staff staff
 
     static hasMany = [payments: Payment]
+    static belongsTo = [customer: Customer]
 
     static mapping = {
         id column: 'rental_id'
