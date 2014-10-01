@@ -3,12 +3,12 @@ package sakila
 class City {
     Short id
     String name
-    Country country
     Date lastUpdated
 
     String toString() { name }
 
-    static hasMany = [addresses:Address]
+    static hasMany = [addresses: Address]
+    static belongsTo = [country: Country]
 
     static mapping = {
         id column: 'city_id'

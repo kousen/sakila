@@ -29,7 +29,7 @@ environments {
     }
     test {
         dataSource {
-            dbCreate = "update"
+            dbCreate = "validate"
             url = "jdbc:mysql://localhost:3306/sakila"
         }
     }

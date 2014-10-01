@@ -8,9 +8,10 @@ class Address {
     String postalCode
     String phone
     Date lastUpdated
-    City city
 
     String toString() { "$street1, $city, $district" }
+
+    static belongsTo = [city: City]
 
     static mapping = {
         id column: 'address_id'

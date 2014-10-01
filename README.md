@@ -8,7 +8,7 @@ are defined as bi-directional one-to-many, except for `film/actor` and `film/cat
 which are many-to-many. All mappings were done by hand rather than use a domain class
 generator.
 
-All controllers currently use dynamic scaffolding.
+All controllers currently use static scaffolding.
 
 The `StoredProcService` and `FunctionService` classes contain methods to invoke the built-in
 stored procedures and functions from Sakila. Integration tests are provided to demonstrate
